@@ -1,0 +1,11 @@
+# Python 3.12, CUDA 12.8, GCC 11 (the C++ extensions are JIT-built on first use)
+torch==2.11.0        # CUDA 12.8 build (https://download.pytorch.org/whl/cu128)
+triton==3.6.0
+numpy==2.2.6
+scikit-learn==1.6.1
+pyarrow==21.0.0      # dataset preprocessing
+ninja==1.13.0        # torch.utils.cpp_extension
+
+# External-library baselines only (srm2/train_fbgemm.py, srm2/train_dynemb.py):
+# fbgemm-gpu==1.6.0  (CUDA 12.8 build)
+# NVIDIA DynamicEmb from NVIDIA/recsys-examples (corelib/dynamicemb), built from source in a separate environment
